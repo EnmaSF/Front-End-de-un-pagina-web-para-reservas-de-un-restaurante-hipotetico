@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background: url('/images/spaguetty.jpg') no-repeat center center fixed;
+    background-size: cover;   /* Ajusta la imagen para cubrir toda la pantalla */
+    background-attachment: fixed; /* Mantiene la imagen fija al hacer scroll */
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Hace que el fondo cubra toda la pantalla */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b40b3;
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+    font-size: 22px;
+}
+
+.back-btn {
+    background-color: white;
+    color: #0078ff;
+    padding: 8px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+    border: 1px solid #0078ff;
+}
+
+.back-btn:hover {
+    background-color: #005ecb;
+    color: white;
+}
+
+.form-section {
+    flex: 1;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: skyblue;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000000;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: #0078ff;
+    outline: none;
+    box-shadow: 0 0 5px #0078ff66;
+}
+
+.logo-container {
+    margin: 25px 0;
+}
+
+.logo-container img {
+    width: 130px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.buttons button,
+.cancel-btn {
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+.buttons button {
+    background-color: #0078ff;
+    color: white;
+    border: 1px solid #0078ff;
+}
+
+.buttons button:hover {
+    background-color: #005ecb;
+}
+
+.cancel-btn {
+    background-color: white;
+    color: #0078ff;
+    border: 1px solid #0078ff;
+    text-decoration: none;
+}
+
+.cancel-btn:hover {
+    background-color: #f1f1f1;
+}
+
+footer {
+    text-align: center;
+    background: #fff;
+    padding: 15px;
+    font-size: 14px;
+    color: #000000;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .form-section {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons button,
+    .cancel-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .logo-container img {
+        width: 110px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
